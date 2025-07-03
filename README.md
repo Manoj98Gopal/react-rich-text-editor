@@ -27,6 +27,6 @@ _Coming soon on npm!_
 For now, clone this repo and use locally:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/react-rich-text-editor.git
+git clone https://github.com/Manoj98Gopal/reactRichTextEditor.git
 cd react-rich-text-editor
 npm install
