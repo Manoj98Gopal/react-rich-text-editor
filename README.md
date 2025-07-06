@@ -1,32 +1,36 @@
 # react-rich-text-editor
 
-A customizable **Rich Text Editor** React component built with [Tiptap](https://tiptap.dev/) and [ShadCN UI](https://ui.shadcn.com/). Designed for easy integration into **React** and **Next.js** projects.
+A customizable **Rich Text Editor React component** built with [Tiptap](https://tiptap.dev/) and [ShadCN UI](https://ui.shadcn.com).  
+Designed for easy integration into **React.js** projects.
 
 ---
 
 ## ✨ Features
 
-- Built on top of Tiptap (ProseMirror-based)
-- Modern, clean UI with ShadCN components
-- Fully React-based: works in React and Next.js
-- Easy to customize and extend
+- 🧠 Built on top of **Tiptap** (ProseMirror-based)
+- 🎨 Clean, modern UI with **ShadCN components**
+- ⚛️ Fully React-based — works in **React.js projects**
+- 🛠️ Easily customizable toolbar, extensions, styling
+- 🔌 Designed for simple plug-and-play integration
 
 ---
 
 ## 🚀 Tech Stack
 
-- **Next.js** – development environment and demo
-- **Tiptap** – editor core
-- **ShadCN UI** – UI components and styling
+- **React.js** – core framework
+- **Tiptap** – editor engine
+- **ShadCN UI** – components and styling
+- **Vite** – dev server and bundler
 
 ---
 
 ## 📦 Installation
 
-_Coming soon on npm!_  
-For now, clone this repo and use locally:
+📦 **Coming soon on NPM!**  
+For now, clone and use locally:
 
 ```bash
-git clone https://github.com/Manoj98Gopal/reactRichTextEditor.git
+git clone https://github.com/Manoj98Gopal/react-rich-text-editor.git
 cd react-rich-text-editor
 npm install
+npm run dev
