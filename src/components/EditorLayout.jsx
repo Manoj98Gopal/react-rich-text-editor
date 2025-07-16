@@ -5,6 +5,9 @@ import { cn } from "@/lib/utils"; // Optional utility for merging Tailwind class
 import ToolBarLayout from "./toolbar/ToolBarLayout";
 import HardBreak from "@tiptap/extension-hard-break";
 import Underline from "@tiptap/extension-underline";
+import TextAlign from "@tiptap/extension-text-align";
+import BulletList from "@tiptap/extension-bullet-list";
+import OrderedList from "@tiptap/extension-ordered-list";
 
 const EditorLayout = ({
   content = "Hi hello working !",
@@ -13,7 +16,24 @@ const EditorLayout = ({
   onChange
 }) => {
   const editor = useEditor({
-    extensions: [StarterKit, HardBreak, Underline],
+    extensions: [
+      StarterKit,
+      HardBreak,
+      Underline,
+      TextAlign.configure({
+        types: ["heading", "paragraph"]
+      }),
+      BulletList.configure({
+        HTMLAttributes: {
+          class: "list-disc ml-3"
+        }
+      }),
+      OrderedList.configure({
+        HTMLAttributes: {
+          class: "list-decimal ml-3"
+        }
+      })
+    ],
     content,
     editorProps: {
       ...editorProps,
@@ -25,6 +45,7 @@ const EditorLayout = ({
         )
       }
     },
+
     onUpdate({ editor }) {
       const html = editor.getHTML();
       if (onChange) {

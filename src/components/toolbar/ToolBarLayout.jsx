@@ -4,6 +4,9 @@ import React from "react";
 import Headings from "./Headings";
 import { cn } from "@/lib/utils";
 import InlineFormatting from "./InlineFormatting";
+import AlignmentFormatting from "./AlignmentFormatting";
+import ListFormatting from "./ListFormatting";
+import TableFormatting from "./TableFormatting";
 
 const ToolBarLayout = ({ editor, className = "" }) => {
   if (!editor) {
@@ -21,6 +24,9 @@ const ToolBarLayout = ({ editor, className = "" }) => {
     >
       <Headings editor={editor} />
       <InlineFormatting editor={editor} />
+      <AlignmentFormatting editor={editor} />
+      <ListFormatting editor={editor} />
+      <TableFormatting editor={editor} />
     </div>
   );
 };
