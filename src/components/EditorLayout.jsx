@@ -8,6 +8,10 @@ import Underline from "@tiptap/extension-underline";
 import TextAlign from "@tiptap/extension-text-align";
 import BulletList from "@tiptap/extension-bullet-list";
 import OrderedList from "@tiptap/extension-ordered-list";
+import Table from "@tiptap/extension-table";
+import TableRow from "@tiptap/extension-table-row";
+import TableHeader from "@tiptap/extension-table-header";
+import TableCell from "@tiptap/extension-table-cell";
 
 const EditorLayout = ({
   content = "Hi hello working !",
@@ -32,7 +36,16 @@ const EditorLayout = ({
         HTMLAttributes: {
           class: "list-decimal ml-3"
         }
-      })
+      }),
+      Table.configure({
+        resizable: true,
+        HTMLAttributes: {
+          class: "table-auto border-collapse border border-gray-300"
+        }
+      }),
+      TableRow,
+      TableHeader,
+      TableCell
     ],
     content,
     editorProps: {

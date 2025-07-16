@@ -143,3 +143,27 @@
     @apply text-base font-medium leading-snug tracking-tight;
   }
 }
+
+@layer utilities {
+  .prose table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+  }
+
+  .prose th,
+  .prose td {
+    border: 1px solid #d1d5db;
+    padding: 8px;
+    text-align: left;
+  }
+
+  .prose th {
+    background-color: #f3f4f6;
+    font-weight: 600;
+  }
+
+  .prose td {
+    vertical-align: top;
+  }
+}
